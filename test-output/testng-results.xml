@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-22T00:46:29 IST" name="Default suite" finished-at="2025-08-22T00:48:13 IST" duration-ms="103700">
+  <suite started-at="2025-08-22T00:57:24 IST" name="Default suite" finished-at="2025-08-22T01:01:50 IST" duration-ms="266844">
     <groups>
     </groups>
-    <test started-at="2025-08-22T00:46:29 IST" name="Default test" finished-at="2025-08-22T00:48:13 IST" duration-ms="103700">
+    <test started-at="2025-08-22T00:57:24 IST" name="Default test" finished-at="2025-08-22T01:01:50 IST" duration-ms="266844">
       <class name="com.qa.naukri.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.naukri.tests.LoginTest@2c4d1ac]" started-at="2025-08-22T00:46:29 IST" name="setup" finished-at="2025-08-22T00:46:39 IST" duration-ms="9653" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.naukri.tests.LoginTest@2c4d1ac]" started-at="2025-08-22T00:57:24 IST" name="setup" finished-at="2025-08-22T00:57:34 IST" duration-ms="10651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginInstahyreapplyJobs()[pri:1, instance:com.qa.naukri.tests.LoginTest@2c4d1ac]" started-at="2025-08-22T00:46:39 IST" name="loginInstahyreapplyJobs" finished-at="2025-08-22T00:47:17 IST" duration-ms="38353" status="PASS">
+        <test-method signature="loginInstahyreapplyJobs()[pri:1, instance:com.qa.naukri.tests.LoginTest@2c4d1ac]" started-at="2025-08-22T00:57:34 IST" name="loginInstahyreapplyJobs" finished-at="2025-08-22T00:58:15 IST" duration-ms="40852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInstahyreapplyJobs -->
-        <test-method signature="toVerifySearchSeleniumnRestAssuredJobsTest()[pri:2, instance:com.qa.naukri.tests.LoginTest@2c4d1ac]" started-at="2025-08-22T00:47:17 IST" name="toVerifySearchSeleniumnRestAssuredJobsTest" finished-at="2025-08-22T00:48:13 IST" duration-ms="55449" status="PASS">
+        <test-method signature="toVerifySearchSeleniumnRestAssuredJobsTest()[pri:2, instance:com.qa.naukri.tests.LoginTest@2c4d1ac]" started-at="2025-08-22T00:58:15 IST" name="toVerifySearchSeleniumnRestAssuredJobsTest" finished-at="2025-08-22T01:01:50 IST" duration-ms="215126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toVerifySearchSeleniumnRestAssuredJobsTest -->

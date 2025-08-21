@@ -116,7 +116,10 @@ public class LoginPage {
 		for (int i = 0; i < viewls.size(); i++) {
 			System.out.println("inside for condition");
 
+			Thread.sleep(5000);
 			eutils.waitElementUntilVisible(applyButton).click();
+			
+			
 			
 
 		}
