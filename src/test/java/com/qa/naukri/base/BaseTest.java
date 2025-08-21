@@ -1,7 +1,9 @@
 package com.qa.naukri.base;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 import com.qa.naukri.factory.DriverFactory;
@@ -14,7 +16,7 @@ public class BaseTest {
 	public WebDriver driver;
 	public LoginPage loginpage;
 
-	@BeforeTest
+	@BeforeClass
 	public void setup() {
 
 		df = new DriverFactory();
@@ -27,11 +29,11 @@ public class BaseTest {
 	
 	
 	
-	@AfterTest
-	public void tearDown() {
-
-		driver.quit();
-
-	}
+//	@AfterClass
+//	public void tearDown() {
+//
+//		driver.quit();
+//
+//	}
 
 }
