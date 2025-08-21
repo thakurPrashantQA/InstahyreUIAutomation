@@ -106,6 +106,12 @@ public class LoginPage {
 	List<WebElement> viewls = driver.findElements(viewButton);
 
 	System.out.println("size print >>>> " + viewls.size());
+	
+	String numberS = driver.findElement(By.xpath("//span[@class='ng-binding ng-scope']")).getText();
+	
+int number = Integer.parseInt(numberS);
+
+System.out.println("numer is >>> "+number);
 
 	if (viewls.size() > 0) {
 
@@ -113,7 +119,7 @@ public class LoginPage {
 
 		viewls.get(0).click();
 
-		for (int i = 0; i < viewls.size(); i++) {
+		for (int i = 0; i <= number; i++) {
 			System.out.println("inside for condition");
 
 			Thread.sleep(5000);
