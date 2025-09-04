@@ -1,0 +1,1 @@
+{"uuid":"8a7e05b2-1f1b-4b55-8c79-45a893e4963a","name":"com.qa.naukri.tests.LoginTest","children":["d7e14691-e5f2-4eee-81ee-acef7d02d93e"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1757004966940,"stop":1757004977544}],"afters":[],"start":1757004966874,"stop":1757004985156}

@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qa.naukri.tests.LoginTest">
         <methods>
+          <include name="tearDown"/>
           <include name="setup"/>
           <include name="toVerifySearchSeleniumnRestAssuredJobsTest"/>
         </methods>

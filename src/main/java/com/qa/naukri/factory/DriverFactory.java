@@ -26,13 +26,8 @@ public class DriverFactory {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 
-			
-
-			
-
 			driver = new ChromeDriver();
-			
-			
+
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 
 			WebDriverManager.firefoxdriver().setup();
@@ -42,9 +37,7 @@ public class DriverFactory {
 		} else if (browserName.equalsIgnoreCase("safari")) {
 
 			driver = new SafariDriver();
-			
-			
-			
+
 		} else {
 
 			System.out.println("Please Pass correct browser name from : chrome,firefox and safari");

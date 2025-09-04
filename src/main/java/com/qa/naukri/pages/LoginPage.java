@@ -25,7 +25,7 @@ public class LoginPage {
 
 	private By applyButton = By.xpath("//div[@class='apply ng-scope']//button[contains(text(),'Apply')]");
 	
-	
+	private By opprtunityButton = By.id("nav-candidates-opportunities");
 	
 	private By skillTextBox = By.id("skills-selectized");
 	private By showResult = By.id("show-results");
@@ -50,7 +50,7 @@ public class LoginPage {
 
 		eutils.waitElementUntilVisible(loginButton).click();
 
-		Thread.sleep(15000);
+		Thread.sleep(10000);
 
 		List<WebElement> viewls = driver.findElements(viewButton);
 
@@ -63,8 +63,8 @@ public class LoginPage {
 			viewls.get(0).click();
 
 			for (int i = 0; i < viewls.size(); i++) {
-				System.out.println("inside for condition");
-
+				System.out.println("Clicking on Apply Button");
+				Thread.sleep(5000);
 				eutils.waitElementUntilVisible(applyButton).click();
 
 			}
@@ -77,7 +77,17 @@ public class LoginPage {
 	
 	public void toVerifySearchSeleniumnRestAssuredJobs() throws InterruptedException {
 		
+		eutils.waitElementUntilVisible(signinButton).click();
+
+		eutils.waitElementUntilVisible(enterEmail).sendKeys("prashant.thakur7333@gmail.com");
+
+		eutils.waitElementUntilVisible(enterPassword).sendKeys("P2e290@123");
+
+		eutils.waitElementUntilVisible(loginButton).click();
+
+		Thread.sleep(8000);
 		
+		eutils.waitElementUntilVisible(opprtunityButton).click();
 		
 	eutils.waitElementUntilVisible(skillTextBox).sendKeys("Selenium");
 	Thread.sleep(1000);
@@ -120,7 +130,7 @@ System.out.println("numer is >>> "+number);
 		viewls.get(0).click();
 
 		for (int i = 0; i <= number; i++) {
-			System.out.println("inside for condition");
+			System.out.println("Clicking on Apply Button");
 
 			Thread.sleep(5000);
 			eutils.waitElementUntilVisible(applyButton).click();
