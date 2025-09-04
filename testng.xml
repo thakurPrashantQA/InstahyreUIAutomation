@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="InstahyreAutomation" parallel="methods" thread-count="2">
+
+    <test name="FunctionalTests">
+        <classes>
+            <class name="com.qa.naukri.tests.LoginTest"/>
+            
+        </classes>
+    </test>
+
+</suite>

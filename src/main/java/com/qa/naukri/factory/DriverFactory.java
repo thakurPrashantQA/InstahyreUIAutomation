@@ -10,43 +10,38 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
-	public WebDriver driver;
-
-	/**
-	 * This Method is used to initialize the webdriver on the basis of browser name
-	 * 
-	 * 
-	 * @param browserName
-	 * @return driver
-	 */
+	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+	
 
 	public WebDriver init_driver(String browserName) {
 
 		System.out.println("Browser Name is " + browserName);
 
 		if (browserName.equalsIgnoreCase("chrome")) {
+			
+			
 
-			driver = new ChromeDriver();
+			tlDriver.set(new ChromeDriver());
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 
 			WebDriverManager.firefoxdriver().setup();
 
-			driver = new FirefoxDriver();
+//			driver = new FirefoxDriver();
 
 		} else if (browserName.equalsIgnoreCase("safari")) {
 
-			driver = new SafariDriver();
+//			driver = new SafariDriver();
 
 		} else {
 
 			System.out.println("Please Pass correct browser name from : chrome,firefox and safari");
 		}
 
-		driver.manage().window().maximize();
-		driver.get("https://www.instahyre.com/");
+		tlDriver.get().manage().window().maximize();
+		tlDriver.get().get("https://www.instahyre.com/");
 
-		return driver;
+		return tlDriver.get();
 
 	}
 
