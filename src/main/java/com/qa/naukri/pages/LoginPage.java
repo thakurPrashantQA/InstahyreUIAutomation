@@ -25,7 +25,6 @@ public class LoginPage {
 
 	private By applyButton = By.xpath("//div[@class='apply ng-scope']//button[contains(text(),'Apply')]");
 	
-	private By opprtunityButton = By.id("nav-candidates-opportunities");
 	
 	private By skillTextBox = By.id("skills-selectized");
 	private By showResult = By.id("show-results");
@@ -89,8 +88,6 @@ public class LoginPage {
 
 		Thread.sleep(8000);
 		
-		eutils.waitElementUntilVisible(opprtunityButton).click();
-		
 	eutils.waitElementUntilVisible(skillTextBox).sendKeys("Selenium");
 	Thread.sleep(1000);
 	eutils.waitElementUntilVisible(skillTextBox).sendKeys(Keys.ENTER);
@@ -137,7 +134,7 @@ System.out.println("numer is >>> "+number);
 			if(driver.findElements(errormsg).size()>0) {
 				
 				
-				driver.findElement(notintrestedButton).clear();
+				driver.findElement(notintrestedButton).click();
 				
 			}
 
