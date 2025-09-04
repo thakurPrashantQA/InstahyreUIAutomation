@@ -30,6 +30,8 @@ public class LoginPage {
 	private By skillTextBox = By.id("skills-selectized");
 	private By showResult = By.id("show-results");
 	
+	private By errormsg = By.xpath("//div[contains(text(),'problems')]");
+	private By notintrestedButton = By.xpath("//button[text()='Not interested']");
 	
 
 	public LoginPage(WebDriver driver) {
@@ -131,6 +133,13 @@ System.out.println("numer is >>> "+number);
 
 		for (int i = 0; i <= number; i++) {
 			System.out.println("Clicking on Apply Button");
+			
+			if(driver.findElements(errormsg).size()>0) {
+				
+				
+				driver.findElement(notintrestedButton).clear();
+				
+			}
 
 			Thread.sleep(5000);
 			eutils.waitElementUntilVisible(applyButton).click();
