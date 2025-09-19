@@ -47,7 +47,7 @@ public class LoginPage {
 
 		eutils.waitElementUntilVisible(enterEmail).sendKeys("prashant.thakur7333@gmail.com");
 
-		eutils.waitElementUntilVisible(enterPassword).sendKeys("P2e290@123");
+		eutils.waitElementUntilVisible(enterPassword).sendKeys("prashant.thakur7333@gmail.com");
 
 		eutils.waitElementUntilVisible(loginButton).click();
 
@@ -82,7 +82,7 @@ public class LoginPage {
 
 		eutils.waitElementUntilVisible(enterEmail).sendKeys("prashant.thakur7333@gmail.com");
 
-		eutils.waitElementUntilVisible(enterPassword).sendKeys("P2e290@123");
+		eutils.waitElementUntilVisible(enterPassword).sendKeys("prashant.thakur7333@gmail.com");
 
 		eutils.waitElementUntilVisible(loginButton).click();
 
